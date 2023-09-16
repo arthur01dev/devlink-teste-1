@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --blue: #3f4cff;
+    --back-social-links: rgba(255, 255, 255, 0.164);
+    --back-social-links-hover: rgba(2, 43, 155, 0.144);
+    --color-footer: rgba(255, 255, 255, 0.671);
+    --fundo-white: #ffffff;
+    --fundo-blue: #3f4cff;
+}
+
+
+
+body {
+    background: linear-gradient(120deg, var(--fundo-white), var(--fundo-blue), var(--fundo-white));
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 588px;
+    margin: auto;
+    margin-top: 56px;
+    padding: 0 24px;
+}
+
+.perfil {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil img {
+    max-width: 190px;
+    min-width: 120px;
+    max-height: 190px;
+    min-height: 120px;
+    border-radius: 50%;
+    border: solid 4px var(--white);
+    margin-bottom: 30px;
+}
+
+.perfil p {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+.social-links ul li {
+    list-style: none;
+}
+
+.social-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    background: var(--back-social-links);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 14px 100px;
+    border: solid 1px var(--white);
+    border-radius: 60px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-weight: 500;
+    transition: background 0.8s;
+}
+
+ul li a:hover {
+    border: var(--white) solid 1.5px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--back-social-links-hover);
+    transform: scale(1.05);
+}
+
+.social-links img {
+    padding-right: 12px;
+}
+
+
+.social-links ul li img {
+    width: 45px;
+    height: 45px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-footer);
+    margin-bottom: 20px;
+}
+
